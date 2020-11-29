@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Countries from './axios-countries/Countries';
+import { GetCountries, getCountries } from './axios-function/GetCountries';
+import AsyncCountries from './axios-async/AsyncCountries';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AsyncCountries></AsyncCountries>
   </React.StrictMode>,
   document.getElementById('root')
 );
